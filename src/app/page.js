@@ -5,7 +5,10 @@ import img from "../assets/img1.jpg"
 import { useState } from "react";
 import Header from "@/components/header";
 import CourseCard from "@/components/courseCard";
-import Address from "@/components/AddressCard";
+import Address from "@/components/addressCard";
+import Footer from "@/components/Footer";
+import music from "../assets/categories/music.jpg";
+
 export default function Home() {
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -28,15 +31,17 @@ export default function Home() {
   };
 
   return (
-   <>
+   <div className="bg-gray-50">
       <Header/>
 
-   <div className="flex justify-center items-center m-2 p-2">
+   <div className="flex justify-center items-center mt-1 mb-2 p-2">
    
-    <Image src={img} alt="home-screen" className="w-auto" priority/>
+    <Image src={music} alt="home-screen" className="w-full rounded-lg" priority/>
     </div>
     <CourseCard/>
     <Address/>
-   </>
+    <Footer/>
+    
+   </div>
   )
 }

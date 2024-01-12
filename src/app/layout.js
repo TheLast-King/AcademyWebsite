@@ -5,7 +5,7 @@ import Header from '@/components/header'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Vishvakarma Academy',
+  title: 'Vishwakarma Academy',
   description: 'Vishwakarma Academy runs educational programmes which have wider social implications and integrate technological excellence.',
 }
 

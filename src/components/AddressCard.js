@@ -1,4 +1,9 @@
+'use client'
 import React, { useEffect, useState } from 'react';
+import Image from "next/image";
+
+import addressIcon from "../assets/addressCard/addressPointer.png"; 
+
 
 const Address = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -29,9 +34,9 @@ const Address = () => {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div className={`flex flex-col w-full lg:w-2/5 m-2 p-2 ${isMobile ? '' : 'ml-2'}`}>
-          <div className='flex justify-center text-3xl mb-4'>Form</div>
-          <form className='space-y-4'>
+        <div className={`flex flex-col w-full justify-center items-center lg:w-2/5 m-2 p-2 ${isMobile ? '' : 'ml-2'}`}>
+          {/* <div className='flex justify-center text-3xl mb-4'>Form</div> */}
+          {/* <form className='space-y-4'>
             <div className='flex flex-col'>
               <label htmlFor="name" className='text-lg font-semibold'>Name:</label>
               <input type="text" id="name" name="name" className='border p-2 rounded-md' />
@@ -48,8 +53,34 @@ const Address = () => {
             </div>
 
             <button type="submit" className='bg-blue-500 text-white p-2 rounded-md hover:bg-blue-700'>Submit</button>
-          </form>
+          </form> */}
+
+          <div className='flex flex-col w-full p-2'>
+          <Image src={addressIcon} alt="Address"  />
+          <p className='text-2xl'> Sarthana Branch </p>
+          1 Bhagwan Nagar,<br/>
+          Sarthana Jakatnaka <br/>
+          Sarthana, <br/>
+           </div>
+
+           <div className='flex flex-row w-full justify-start items-center p-2'>
+           <div className='flex flex-col justify-start items-center mr-6'>
+            <Image src={addressIcon} alt="Address"  />
+          <p className='text-2xl'> Sarthana Branch </p>
+          1 Bhagwan Nagar,<br/>
+          Sarthana Jakatnaka <br/>
+          Sarthana, <br/>
+           </div>
+           
+           <div className='flex flex-col  justify-start items-center'>
+            <Image src={addressIcon} alt="Address"  />
+          <p className='text-2xl'> Timings </p>
+          1 Bhagwan Nagar,<br/>
+          Sarthana Jakatnaka <br/>
+          Sarthana, <br/>
+           </div>
         </div>
+      </div>
       </div>
     </>
   );
