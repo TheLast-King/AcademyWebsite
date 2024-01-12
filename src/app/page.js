@@ -6,7 +6,7 @@ import { useState } from "react";
 import Header from "@/components/header";
 import CourseCard from "@/components/courseCard";
 import Address from "@/components/addressCard";
-import Footer from "@/components/Footer";
+import Footer from "@/components/footer";
 import music from "../assets/categories/music.jpg";
 
 export default function Home() {
