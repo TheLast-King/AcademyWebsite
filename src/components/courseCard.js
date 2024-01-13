@@ -27,15 +27,15 @@ const CourseCard = () => {
             {/* Hello */}
 
               <Image src={course.imgSrc} alt={`Image ${index}`} width={400} height={300} className='rounded aspect-square object-cover' />
-              <div className='flex justify-start text-2xl m-2'> <u>{course.title} </u></div>
-              <div className='flex flex-row'>
+              <div className='flex justify-center items-center text-2xl m-2'> <u>{course.title} </u></div>
+              {/* <div className='flex flex-row'>
                 <div className='text-2xl m-1'>Course:</div>
                 <div className='text-2xl m-1'>{course.duration}</div>
               </div>
               <div className='flex flex-row justify-start items-center'>
                 <div className='text-2xl m-1 p-2 bg-blue-100 rounded'>Class Size</div>
                 <div className='text-2xl m-1'>{course.classSize}</div>
-              </div>
+              </div> */}
             </div>
           </div>
         ))}

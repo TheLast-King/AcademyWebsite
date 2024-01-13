@@ -56,43 +56,50 @@ const Address = () => {
           </form> */}
 
           <div className='flex flex-col w-full p-2'>
+          <div className='w-10'>
           <Image
           src={addressIcon} // Provide the correct path to your image
           alt="home-screen"
-          width={300} // Provide the actual width of your image
-          height={300} // Provide the actual height of your image
+          width={20} // Provide the actual width of your image
+          height={20} // Provide the actual height of your image
           className="w-full rounded-lg"
           priority
-        />          <p className='text-2xl'> Sarthana Branch </p>
+        />     
+        </div>     <p className='text-2xl'> Sarthana Branch </p>
           1 Bhagwan Nagar,<br/>
           Sarthana Jakatnaka <br/>
           Sarthana, <br/>
            </div>
 
-           <div className='flex flex-row w-full justify-start items-center p-2'>
-           <div className='flex flex-col justify-start items-center mr-6'>
+           <div className='flex flex-row w-full p-2'>
+           <div className='flex flex-col justify-start  mr-6'>
+           <div className='w-10'>
+
            <Image
           src={addressIcon} // Provide the correct path to your image
           alt="home-screen"
-          width={300} // Provide the actual width of your image
-          height={300} // Provide the actual height of your image
+          width={20} // Provide the actual width of your image
+          height={20} // Provide the actual height of your image
           className="w-full rounded-lg"
           priority
-        />          <p className='text-2xl'> Sarthana Branch </p>
+        />      
+         </div>   <p className='text-2xl'> Sarthana Branch </p>
           1 Bhagwan Nagar,<br/>
           Sarthana Jakatnaka <br/>
           Sarthana, <br/>
            </div>
            
            <div className='flex flex-col  justify-start items-center'>
+           <div className='w-10'>
+
            <Image
           src={addressIcon} // Provide the correct path to your image
           alt="home-screen"
-          width={300} // Provide the actual width of your image
-          height={300} // Provide the actual height of your image
+          width={20} // Provide the actual width of your image
+          height={20} // Provide the actual height of your image
           className="w-full rounded-lg"
           priority
-        />          <p className='text-2xl'> Timings </p>
+        />  </div>        <p className='text-2xl'> Timings </p>
           1 Bhagwan Nagar,<br/>
           Sarthana Jakatnaka <br/>
           Sarthana, <br/>

@@ -1,11 +1,12 @@
 'use client'
 import Image from "next/image";
-import music from "../assets/categories/music.jpg";
+import music from "../assets/center/home.jpg";
 import { useState } from "react";
 import Header from "@/components/header";
 import CourseCard from "@/components/courseCard";
 import Address from "@/components/address";
 import Footer from "@/components/footer";
+import AboutUs from "@/components/aboutus";
 
 export default function Home() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -41,7 +42,7 @@ export default function Home() {
           priority
         />
       </div>
-
+      <AboutUs/>
       <CourseCard />
       <Address />
       <Footer />
