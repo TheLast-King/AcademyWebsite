@@ -4,7 +4,7 @@ import music from "../assets/categories/music.jpg";
 import { useState } from "react";
 import Header from "@/components/header";
 import CourseCard from "@/components/courseCard";
-import Address from "@/components/addressCard";
+import Address from "@/components/address";
 import Footer from "@/components/footer";
 
 export default function Home() {
