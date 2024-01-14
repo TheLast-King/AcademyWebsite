@@ -2,12 +2,12 @@
 import Image from "next/image";
 import music from "../assets/center/home.jpg";
 import { useState } from "react";
-import Header from "@/components/header";
-import Address from "@/components/address";
-import Footer from "@/components/footer";
-import AboutUs from "@/components/aboutus";
-import Coursecard from "@/components/coursecard";
-import Event from "@/components/event";
+import Header from "../components/header";
+import Address from "../components/address";
+import Footer from "../components/footer";
+import AboutUs from "../components/aboutus";
+import Coursecard from "../components/coursecard";
+import Event from "../components/event";
 export default function Home() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
