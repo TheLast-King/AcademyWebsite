@@ -6,7 +6,7 @@ import Header from "../components/header";
 import Address from "../components/address";
 import Footer from "../components/footer";
 import AboutUs from "../components/aboutus";
-import Coursecard from "../components/coursecard";
+import Coursecard from "../components/course";
 import Event from "../components/event";
 export default function Home() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);

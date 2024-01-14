@@ -4,7 +4,7 @@ import img1 from "../assets/img1.jpg";
 import music from "../assets/categories/music.jpg";
 import dancing from "../assets/dancing/dancing.png";
 
-const Coursecard = () => {
+const Course = () => {
   const courses = [
     { imgSrc: music, title: "Music", duration: "6 months", classSize: 20 },
     { imgSrc: dancing, title: "Dance", duration: "6 months", classSize: 20 },
@@ -51,4 +51,4 @@ const Coursecard = () => {
   );
 };
 
-export default Coursecard;
+export default Course;
