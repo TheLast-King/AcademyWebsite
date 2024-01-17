@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <header className='h-20 text-lg bg-black text-white'>
-      <div className='max-w-7xl mx-auto flex justify-between items-center'>
+      <div className='max-w-7xl mx-auto flex justify-between items-center pr-2'>
         <div className='flex flex-row justify-center items-center p-2'>
           <Image
             src={logo} // Provide the correct path to your image
