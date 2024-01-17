@@ -39,7 +39,7 @@ const Course = () => {
               />
               <div className="flex justify-center items-center text-2xl m-2">
                 {" "}
-                <u>{course.title} </u>
+                {course.title} 
               </div>
               {/* <div className='flex flex-row'>
                 <div className='text-2xl m-1'>Course:</div>

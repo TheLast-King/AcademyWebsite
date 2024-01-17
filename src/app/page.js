@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import music from "../assets/center/home.jpg";
+import home from "../assets/center/home.png";
 import { useState } from "react";
 import Header from "../components/header";
 import Address from "../components/address";
@@ -34,7 +34,7 @@ export default function Home() {
 
       <div className="flex justify-center items-center mt-1 mb-2 p-2">
         <Image
-          src={music} // Provide the correct path to your image
+          src={home} // Provide the correct path to your image
           alt="home-screen"
           width={300} // Provide the actual width of your image
           height={300} // Provide the actual height of your image

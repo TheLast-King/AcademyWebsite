@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Image from "next/image";
 
 import addressIcon from "../assets/addressCard/addressPointer.png"; 
-
+import contact from "../assets/addressCard/call.png"
 
 const Address = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -76,14 +76,14 @@ const Address = () => {
            <div className='w-10'>
 
            <Image
-          src={addressIcon} // Provide the correct path to your image
+          src={contact} // Provide the correct path to your image
           alt="home-screen"
           width={20} // Provide the actual width of your image
           height={20} // Provide the actual height of your image
           className="w-full rounded-lg"
           priority
         />      
-         </div>   <p className='text-2xl'> Sarthana Branch </p>
+         </div>   <p className='text-2xl'> Contact </p>
           1 Bhagwan Nagar,<br/>
           Sarthana Jakatnaka <br/>
           Sarthana, <br/>
