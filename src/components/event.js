@@ -4,7 +4,7 @@ import img1 from "../assets/img1.jpg";
 import music from "../assets/categories/music.jpg";
 import dancing from "../assets/dancing/dancing.png";
 import inauguration from "../assets/events/inauguration.jpg"
-import SummerCamp from "../assets/events/SUmmerCamp.jpg"
+import SummerCamp from "../assets/events/SummerCamp.jpg"
 import SocialCampaign from "../assets/events/SocialCampaign.jpg"
 import SocialAwareness from "../assets/events/SocialAwareness.jpg"
 
