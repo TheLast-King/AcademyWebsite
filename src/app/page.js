@@ -8,6 +8,7 @@ import Footer from "../components/footer";
 import AboutUs from "../components/aboutus";
 import Coursecard from "../components/course";
 import Event from "../components/event";
+import RunningNumberInfo from "@/components/AcademyNumbers";
 export default function Home() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
@@ -29,10 +30,10 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-gray-50">
+    <div className="bg-orange-30">
       <Header />
 
-      <div className="flex justify-center items-center mt-1 mb-2 p-2">
+      <div className="flex justify-center items-center mt-1 mb-0">
         <Image
           src={home} // Provide the correct path to your image
           alt="home-screen"
@@ -42,6 +43,7 @@ export default function Home() {
           priority
         />
       </div>
+      <RunningNumberInfo/>
       <AboutUs />
       <Coursecard />
       <Event />
