@@ -6,9 +6,11 @@ import Header from "../components/header";
 import Address from "../components/address";
 import Footer from "../components/footer";
 import AboutUs from "../components/aboutus";
-import Coursecard from "../components/course";
 import Event from "../components/event";
 import RunningNumberInfo from "@/components/AcademyNumbers";
+import Course from "@/components/c"
+
+
 export default function Home() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
@@ -30,7 +32,7 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-orange-30">
+    <div className="bg-orange-30 flex flex-col">
       <Header />
 
       <div className="flex justify-center items-center mt-1 mb-0">
@@ -45,7 +47,7 @@ export default function Home() {
       </div>
       <RunningNumberInfo/>
       <AboutUs />
-      <Coursecard />
+      <Course/>
       <Event />
       <Address />
       <Footer />

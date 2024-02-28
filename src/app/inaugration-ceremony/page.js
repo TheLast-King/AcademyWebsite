@@ -1,6 +1,5 @@
 'use client'
 import Header from "@/components/header";
-import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 const Ceremony = () => {
@@ -115,16 +114,14 @@ const squareData = [
 
 const generateSquares = () => {
   return shuffle(squareData).map((sq) => (
-    <motion.div
+    <div
       key={sq.id}
-      layout
-      transition={{ duration: 1.5, type: "spring" }}
       className="w-full h-full"
       style={{
         backgroundImage: `url(${sq.src})`,
         backgroundSize: "cover",
       }}
-    ></motion.div>
+    ></div>
   ));
 };
 
