@@ -7,16 +7,11 @@ import Taekwondo from "../assets/categories/taekwondo.png";
 import Link from "next/link";
 import Aos from 'aos';
 import 'aos/dist/aos.css'
-
-
+import CoursesData from '../data/courseData'
 
 const Course = () => {
-  const courses = [
-    { imgSrc: music, title: "Guitar", duration: "6 months", classSize: 20 },
-    { imgSrc: dancing, title: "Guitar", duration: "6 months", classSize: 20 },
-    { imgSrc: Tarot, title: "Guitar", duration: "6 months", classSize: 20 },
-    { imgSrc: Taekwondo, title: "Guitar", duration: "6 months", classSize: 20 },
-  ];;
+
+    const courses = CoursesData.slice(0,3);
 
   useEffect(()=> {
     Aos.init();
@@ -28,18 +23,18 @@ const Course = () => {
       <h1 className="text-4xl mt-6 p-2 flex justify-center items-center m-2">
         Courses
       </h1>
-      <div className="flex flex-wrap justify-center" data-aos="flip-left" >
+      <div className="flex flex-wrap justify-center" data-aos="zoom-in" >
         {courses.map((course, index) => (
           <div
             key={index}
             className="w-full md:w-1/2 lg:w-1/3 xl:w-1/3 flex p-4 justify-center items-center" 
           >
-<Link href={`/courses/${encodeURIComponent(course?.title)}`}>
+<Link href={`/courses`}>
 
             <div className="flex flex-col h-auto rounded transition duration-300 transform hover:scale-105">
            
               <Image
-                src={course.imgSrc}
+                src={course.img}
                 alt={`Image ${index}`}
                 width={400}
                 height={300}
@@ -47,25 +42,12 @@ const Course = () => {
               />
               <div className="flex justify-center items-center text-2xl m-2">
                 {" "}
-                {course.title}
+                {course.Name}
               </div>
 
-              <div className="flex justify-center items-center text-2xl m-2">
-                {" "}
-                {course.Days}
-              </div>
+        
 
-
-              <div className="flex justify-center items-center text-2xl m-2">
-                {" "}
-                {course.Timing}
-              </div>
-
-
-              <div className="flex justify-center items-center text-2xl m-2">
-                {" "}
-                {course.Course_Details}
-              </div>
+      
             </div>
             </Link>
           </div>

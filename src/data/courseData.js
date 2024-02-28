@@ -1,4 +1,4 @@
-import tabla from "../assets//courses/tabla.jpg"
+import tabla from "../assets/courses/tabla.jpg"
 import guitar from "../assets/courses/guitar.jpg"
 import keyboard from "../assets/courses/keyboard.jpg"
 import harmonium from "../assets/courses/harmonium.jpg"
