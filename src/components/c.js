@@ -1,9 +1,5 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
-import music from "../assets/categories/music.jpg";
-import dancing from "../assets/dancing/dancing.png";
-import Tarot from "../assets/categories/tarot.jpg";
-import Taekwondo from "../assets/categories/taekwondo.png";
 import Link from "next/link";
 import Aos from 'aos';
 import 'aos/dist/aos.css'

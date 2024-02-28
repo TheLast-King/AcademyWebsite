@@ -51,7 +51,7 @@ const Courses = () => {
 
       <div className="flex flex-wrap justify-center items-center m-2 w-90">
         {filteredCourses.map((course, index) => (
-          <div key={index} className="w-1/3 p-2">
+          <div key={index} className="flex justify-center items-center w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 p-2">
             <CourseCard course={course} />
           </div>
         ))}

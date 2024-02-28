@@ -1,15 +1,18 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import testImage from "../assets/img1.jpg"
 
 const CourseCard = ({ course }) => {
   return (
-    <div className="m-2 justify-center items-center sm:w-72 md:w-96 lg:w-96 xl:w-96 rounded-md course-card transition duration-300 transform hover:scale-105 hover:ring-2 hover:ring-black hover:ring-opacity-50">
-      <Link href={`/courses/${encodeURIComponent(course?.Name)}`}>
+    <div className="m-2 justify-center items-center w-full md:w-96 lg:w-96 xl:w-96 rounded-md course-card transition duration-300 transform hover:scale-105 hover:ring-2 hover:ring-black hover:ring-opacity-50">
+      <Link href={`/courses/${course.Name}`}>
         <div className="flex flex-col w-full h-auto rounded">
           <div className='flex justify-center items-center'>
-            <Image src={course.img} alt="test" className='w-full h-64 object-cover' />
+            <Image src={course.img} alt="test" className='object-cover'  sizes="100vw"
+        style={{
+          width: '100%',
+          height: '64vh',
+        }} />
           </div>
           <div className='flex flex-col text-2xl mt-2'>
             <div>{course?.Name}</div>

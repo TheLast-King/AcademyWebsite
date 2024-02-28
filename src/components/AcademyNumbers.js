@@ -57,7 +57,7 @@ const RunningNumberInfo = () => {
     <div className="flex flex-wrap justify-center items-center">
       {data.map((item, index) => (
         <div key={index} className={`flex flex-col items-center m-2 rounded-md border bg-cyan-100 border-black p-2 hover:bg-cyan-200 transition duration-300 ${index % 2 === 0 ? 'w-1/5 sm:w-1/2 md:w-1/3 lg:w-1/6' : 'w-1/5 sm:w-1/2 md:w-1/3 lg:w-1/6'}`}>
-          <div className="text-lg md:text-sm">{item.label}</div>
+          <div className="sm:text-md md:text-lg xl:text-sm">{item.label}</div>
           <div className="text-lg md:text-sm">{item.value}+</div>
         </div>
       ))}

@@ -74,8 +74,8 @@ const Details = ({params}) => {
           onChange={(e) => setFilterCategory(e.target.value)}
           className='p-2 w-28 border rounded-md'
         >
-          {uniqueCategories.map((category) => (
-            <option key={category} value={category}>
+          {uniqueCategories.map((category, index) => (
+            <option key={index} value={category}>
               {category}
             </option>
           ))}
